@@ -29,7 +29,8 @@ void init_device(void) {
 #ifdef SHOW_SCREEN
   init_sdl();
 #endif
-  init_uart();
+  //init_uart();
+  init_uart16550;
   init_sd();
 }
 
@@ -37,7 +38,8 @@ void finish_device(void) {
 #ifdef SHOW_SCREEN
   finish_sdl();
 #endif
-  finish_uart();
+  //finish_uart();
+  finish_uart16550;
   finish_sd();
 }
 
